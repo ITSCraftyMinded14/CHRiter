@@ -61,7 +61,7 @@ body {
   border-top:1px solid #ddd;
 }
 
-userInput { flex:1; padding:10px; border-radius:10px; border:1px solid #ccc; outline:none; }
+#userInput { flex:1; padding:10px; border-radius:10px; border:1px solid #ccc; outline:none; }
 
 button#sendBtn { margin-left:10px; padding:10px 14px; border:none; background:black; color:white; border-radius:10px; cursor:pointer; }
 button#sendBtn:hover { background:#333; }
