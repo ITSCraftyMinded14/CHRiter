@@ -67,10 +67,10 @@ body {
 button#sendBtn { margin-left:10px; padding:10px 14px; border:none; background:black; color:white; border-radius:10px; cursor:pointer; }
 button#sendBtn:hover { background:#333; }
 
-.sidebar img { width:40px; height:40px; margin-bottom:20px; }
+.sidebar img { width:30px; height:30px; margin-bottom:20px; }
 .sidebar button {
   /* background:#333; color:white; border:none; padding:10px; margin-bottom:10px; border-radius:8px; cursor:pointer; */
-  background:#ccc; color:black; border:none; padding:10px; margin-bottom:10px; border-radius:8px; cursor:pointer;
+  background:#eee; color:black; border:none; padding:10px; margin-bottom:10px; border-radius:8px; cursor:pointer;
 }
 .sidebar button:hover { background:#555; }
 .sidebar h3 { margin-top:20px; margin-bottom:10px; font-weight:normal; }
