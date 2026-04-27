@@ -644,8 +644,8 @@ function buildCanvas(){
   return {canvas,width,height,displayText};
 }
 
-function downloadPNG(){const{canvas}=buildCanvas();const link=document.createElement('a');link.download='fontgen.png';link.href=canvas.toDataURL('image/png');link.click();}
-function downloadSVG(){const{canvas,width,height}=buildCanvas();const imgData=canvas.toDataURL();const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><image href="${imgData}" width="${width}" height="${height}"/></svg>`;const blob=new Blob([svg],{type:'image/svg+xml'});const link=document.createElement('a');link.download='fontgen.svg';link.href=URL.createObjectURL(blob);link.click();}
+function downloadPNG(){const{canvas}=buildCanvas();const link=document.createElement('a');link.download='fogene.png';link.href=canvas.toDataURL('image/png');link.click();}
+function downloadSVG(){const{canvas,width,height}=buildCanvas();const imgData=canvas.toDataURL();const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><image href="${imgData}" width="${width}" height="${height}"/></svg>`;const blob=new Blob([svg],{type:'image/svg+xml'});const link=document.createElement('a');link.download='fogene.svg';link.href=URL.createObjectURL(blob);link.click();}
 function downloadSVGPaths(){
   if(!state.lastFontFile){alert('Upload a font first to use SVG Paths export.');return;}
   const displayText=getDisplayText();
@@ -656,7 +656,7 @@ function downloadSVGPaths(){
     const path=font.getPath(displayText,20,height/2+state.fontSize*0.35,state.fontSize);
     const pathData=path.toPathData();
     const svg=`<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}"><rect width="${width}" height="${height}" fill="${state.bgColor}"/><path d="${pathData}" fill="${state.textColor}"/></svg>`;
-    const blob=new Blob([svg],{type:'image/svg+xml'});const link=document.createElement('a');link.download='fontgen-paths.svg';link.href=URL.createObjectURL(blob);link.click();
+    const blob=new Blob([svg],{type:'image/svg+xml'});const link=document.createElement('a');link.download='fogene-paths.svg';link.href=URL.createObjectURL(blob);link.click();
   };
   reader.readAsArrayBuffer(state.lastFontFile);
 }
