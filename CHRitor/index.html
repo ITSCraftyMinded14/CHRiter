@@ -15,6 +15,13 @@
   </div>
 
   <app-root></app-root>
+  <script>
+    // Reset zoom to 1x when Angular loads
+    document.addEventListener('DOMContentLoaded', function() {
+      document.documentElement.style.zoom = '1';
+      document.body.style.zoom = '1';
+    });
+  </script>
   <script src="runtime.js" defer></script>
   <script src="polyfills.js" defer></script>
   <script src="main.js" defer></script>
